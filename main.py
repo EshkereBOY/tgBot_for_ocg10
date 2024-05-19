@@ -2,7 +2,7 @@ import telebot
 from telebot import types
 from random import randint
 
-
+bot = telebot.TeleBot('7082771455:AAEB0IBowxpXnvf6yFSpA5wCmaoCsA_WhtU')
 
 
 # Обработчик команды /start
@@ -35,5 +35,4 @@ def handle_text(message):
 # Запускаем бота
 if __name__ == '__main__':
 
-    bot = telebot.TeleBot('7082771455:AAEB0IBowxpXnvf6yFSpA5wCmaoCsA_WhtU')
     bot.polling()
