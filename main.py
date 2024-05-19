@@ -13,8 +13,7 @@ def send_welcome(message):
     item2 = types.KeyboardButton("Стоп")
     item3 = types.KeyboardButton("Гифка")
     markup.add(item1, item2, item3)
-    bot.send_message(message.chat.id, "Добро пожаловать! Выберите действие:", reply_markup=markup)
-    bot.reply_to(message, "Привет!")
+    bot.send_message(message.chat.id, "Добро пожаловать в Бабки интертеимент! Выберите действие:", reply_markup=markup)
 
 # Обработчик текстовых сообщений
 @bot.message_handler(content_types=['text'])
